@@ -1,0 +1,31 @@
+<div className="quote-results">    
+  <div id="QuotingUnderwriterList">                
+          <div name="quoting-underwriter-overlay" *ngFor="let quote of quotes">
+              <article className="quote-result" name="quoting-result-article">
+              <header className="quote-header">
+                  <div className="quote-brand-wrap">
+                      {{quote.UnderwriterName}}
+                  </div>                       
+              </header>
+              <section className="quote-body">
+                  <div className="quote-choice-wrap quote-excess-wrap" name="quoting-underwriter-section">
+                      <label>
+                      Voluntary Excess
+<!--                       
+                      {quote.UnderwriterSupportsVoluntaryExcess && 
+                          <VoluntaryExcess 
+                              onChange={onChange} 
+                              name="voluntaryExcess"/>}                                                                            -->
+                      </label>
+                  </div> 
+                  <div className="quote-requirements-wrap" name="quoting-underwriter-section">
+                      <!-- <QuoteRequirements quote={quote} />                             -->
+                  </div>
+              </section>
+              <footer className="quote-footer" name="quoting-underwriter-section">                       
+                  <!-- <QuoteSelectButton premium={quote.Premium} onClick={(e) => onQuoteSelect(e, quote)} /> -->
+              </footer>
+          </article>
+      </div>                            
+  </div>
+</div>
