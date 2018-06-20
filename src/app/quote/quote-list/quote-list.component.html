@@ -11,7 +11,13 @@
                   <div class="quote-choice-wrap quote-excess-wrap" name="quoting-underwriter-section">
                     <label>
                       Voluntary Excess                      
-                      <app-vountary-excess *ngIf="quote.UnderwriterSupportsVoluntaryExcess"  quote="quote.SelectedVoluntaryExcess"></app-vountary-excess>                      
+                      <!-- <app-vountary-excess *ngIf="quote.UnderwriterSupportsVoluntaryExcess"  quote="quote.SelectedVoluntaryExcess"></app-vountary-excess>  -->
+                      
+                      <select class="quote-voluntary-excess" [(ngModel)]="quote.SelectedVoluntaryExcess">
+                            <option value="0">£0</option>
+                            <option value="250">£250</option>
+                            <option value="500">£500</option>
+                          </select>    
                     </label>
                   </div> 
                   <div class="quote-requirements-wrap" name="quoting-underwriter-section">

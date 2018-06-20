@@ -11,7 +11,7 @@ export class QuoteListComponent implements OnInit {
   constructor() { }
 
   selectedQuote: IQuote;
-
+  
   @Input() quotes: IQuote[];
 
   ngOnInit() {

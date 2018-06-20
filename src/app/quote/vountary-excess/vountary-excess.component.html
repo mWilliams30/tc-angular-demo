@@ -1,5 +1,5 @@
-<select class="quote-voluntary-excess" [(ngModel)]="selectedOption">
-  <option *ngFor="let item of options" [ngValue]="item">
+<select class="quote-voluntary-excess" [(ngModel)]="quote.SelectedVoluntaryExcess">
+  <option *ngFor="let item of options" [value]="item.value">
     {{item.display}}
   </option>  
 </select>    
