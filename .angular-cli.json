@@ -19,9 +19,7 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css",
-        "./Content/branding-v1.0.0/less/frontend-light.css",
-        "./Content/quote-underwriter-selection.min.css"
+        "styles.css"       
       ],
       "scripts": [],
       "environmentSource": "environments/environment.ts",
