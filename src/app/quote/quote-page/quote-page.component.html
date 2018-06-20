@@ -1,2 +1,2 @@
 <h1>Quotes</h1>
-<app-quote-list [quotes]="quotes"></app-quote-list>
+<app-quote-list [quotes]="quotes" (quoteSelected)="onQuoteSelected($event)"></app-quote-list>

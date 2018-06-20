@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { QuoteService } from '../quote.service';
+import { IQuote } from '../quote';
 
 @Component({
   selector: 'app-quote-page',
@@ -19,4 +20,9 @@ export class QuotePageComponent implements OnInit {
         this.quotes = quotes;
       })
   }
+
+  onQuoteSelected(quoteSelected: IQuote): void{
+    console.log(quoteSelected);
+  }
+
 }

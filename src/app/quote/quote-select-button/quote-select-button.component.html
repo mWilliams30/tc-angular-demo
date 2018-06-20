@@ -1,12 +1,10 @@
 <div>
     <div class="quote-price-wrap hidden-xs">
-        <span class="quote-price">£{{premium}}</span>
+        <span class="quote-price">£{{quote.Premium}}</span>
     </div>
-    <div class="quote-submit-wrap">
-        <!-- <a class="btn btn-lg btn-block btn-primary underwriter-selection-button" 
-        onClick={onClick}> -->
-        <a class="btn btn-lg btn-block btn-primary underwriter-selection-button">
-        Select <span class="glyphicon glyphicon-chevron-right"></span>                            
+    <div class="quote-submit-wrap">      
+        <a class="btn btn-lg btn-block btn-primary underwriter-selection-button" (click)="onClick()">
+        Select <span class="glyphicon glyphicon-chevron-right" ></span>                            
         </a>
     </div>
 </div>   

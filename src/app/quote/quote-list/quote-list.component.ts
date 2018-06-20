@@ -10,9 +10,16 @@ export class QuoteListComponent implements OnInit {
 
   constructor() { }
 
+  selectedQuote: IQuote;
+
   @Input() quotes: IQuote[];
 
   ngOnInit() {
+  }
+
+  onQuoteSelected(quoteSelected: IQuote): void{
+    this.selectedQuote = quoteSelected
+    alert(this.selectedQuote.UnderwriterName + " - " +  this.selectedQuote.Premium + " \nVoluntary Excess - " +  this.selectedQuote.SelectedVoluntaryExcess);
   }
 
 }

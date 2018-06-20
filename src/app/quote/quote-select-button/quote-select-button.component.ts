@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { IQuote } from '../quote';
 
 @Component({
   selector: 'app-quote-select-button',
@@ -8,9 +9,14 @@ import { Component, OnInit, Input } from '@angular/core';
 export class QuoteSelectButtonComponent implements OnInit {
 
   constructor() { }
+  
+  @Input() quote: IQuote;    
+  @Output() quoteSelected: EventEmitter<IQuote> = new EventEmitter<IQuote>()
 
-  @Input() premium: any;
   ngOnInit() {
   }
 
+  onClick(): void{
+   this.quoteSelected.emit(this.quote);
+  }
 }

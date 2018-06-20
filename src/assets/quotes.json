@@ -2,7 +2,7 @@
     {
         "UnderwriterMinVehicleValue": 0,
         "UnderwriterSupportsVoluntaryExcess": true,
-        "SelectedVoluntaryExcess": 1,
+        "SelectedVoluntaryExcess": 0,
         "UnderwriterMaxPenaltyPoints": 7,
         "UnderwriterMaxPenaltyPointsExpiryYears": 3,
         "UnderwriterMaxFaultClaims": 2,

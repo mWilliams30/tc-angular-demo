@@ -11,5 +11,6 @@ export interface IQuote {
     UnderwriterMaxPenaltyPointsExpiryYears: number,
     UnderwriterMaxFaultClaims: number,
     UnderwriterMaxFaultClaimsExpiryYears: number,
-    UnderwriterMinimumVehicleValue: number    
+    UnderwriterMinimumVehicleValue: number,
+    SelectedVoluntaryExcess: number    
 }
