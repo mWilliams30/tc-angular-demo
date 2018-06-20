@@ -10,20 +10,15 @@
               <section class="quote-body">
                   <div class="quote-choice-wrap quote-excess-wrap" name="quoting-underwriter-section">
                       <label>
-                      Voluntary Excess
-<!--                       
-                      {quote.UnderwriterSupportsVoluntaryExcess && 
-                          <VoluntaryExcess 
-                              onChange={onChange} 
-                              name="voluntaryExcess"/>}                                                                            -->
-                      </label>
+                      Voluntary Excess                      
+                      <app-vountary-excess *ngIf="quote.UnderwriterSupportsVoluntaryExcess"></app-vountary-excess>                      </label>
                   </div> 
                   <div class="quote-requirements-wrap" name="quoting-underwriter-section">
-                      <!-- <QuoteRequirements quote={quote} />                             -->
+                      <app-quote-requirements [quote]="quote"></app-quote-requirements>
                   </div>
               </section>
-              <footer class="quote-footer" name="quoting-underwriter-section">                       
-                  <!-- <QuoteSelectButton premium={quote.Premium} onClick={(e) => onQuoteSelect(e, quote)} /> -->
+              <footer class="quote-footer" name="quoting-underwriter-section">  
+                  <app-quote-select-button [premium]="quote.Premium"></app-quote-select-button>                                       
               </footer>
           </article>
       </div>                            
