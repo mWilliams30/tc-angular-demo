@@ -10,6 +10,7 @@ import { QuoteListComponent } from './quote/quote-list/quote-list.component';
 import { VountaryExcessComponent } from './quote/vountary-excess/vountary-excess.component';
 import { QuoteRequirementsComponent } from './quote/quote-requirements/quote-requirements.component';
 import { QuoteSelectButtonComponent } from './quote/quote-select-button/quote-select-button.component';
+import { HelloComponent } from './hello/hello.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { QuoteSelectButtonComponent } from './quote/quote-select-button/quote-se
     QuoteListComponent,
     VountaryExcessComponent,
     QuoteRequirementsComponent,
-    QuoteSelectButtonComponent
+    QuoteSelectButtonComponent,
+    HelloComponent
   ],
   imports: [
     BrowserModule,
